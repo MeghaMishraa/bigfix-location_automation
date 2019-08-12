@@ -1,0 +1,9 @@
+<BESPluginRegistration> 
+	<Name>test</Name> 
+	<Command>powershell -file "D:\Program Files (x86)\BigFix Enterprise\BES Server\Applications\LocationPlugin\LocationPlugin.ps1" </Command>
+    <Schedule></Command>
+	<Schedule> 
+		<WaitPeriodSeconds>5</WaitPeriodSeconds> 
+	</Schedule> 
+	<ForceKill>True</ForceKill>
+</BESPluginRegistration>
