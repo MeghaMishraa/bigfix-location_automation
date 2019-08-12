@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<BES xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="BES.xsd">
+	<Analysis>
+		<Title>Custom Analysis</Title>
+		<Description><![CDATA[&lt;enter a description of the analysis here&gt; ]]></Description>
+		<Relevance>true</Relevance>
+		<Source>Internal</Source>
+		<SourceReleaseDate>2019-04-12</SourceReleaseDate>
+		<MIMEField>
+			<Name>x-fixlet-modification-time</Name>
+			<Value>Mon, 15 Apr 2019 14:35:58 +0000</Value>
+		</MIMEField>
+		<Domain>BESC</Domain>
+		<Property Name="city" ID="1"><![CDATA[(if (exists file ((pathname of data folder of client) & "/CustomSite_Software_Distribution_Package" & "/loc.csv")) then (Tuple String Items 1 of concatenation ", " of Substrings separated by "," of lines whose (it starts with hostname) of files ((pathname of data folder of client) & "/CustomSite_Software_Distribution_Package" & "/loc.csv")) else "do not disturb")]]></Property>
+		<Property Name="Country" ID="3"><![CDATA[(if (exists file ((pathname of data folder of client) & "/CustomSite_Software_Distribution_Package" & "/loc.csv")) then (Tuple String Items 2 of concatenation ", " of Substrings separated by "," of lines whose (it starts with hostname) of files ((pathname of data folder of client) & "/CustomSite_Software_Distribution_Package" & "/loc.csv")) else "do not disturb")]]></Property>
+	</Analysis>
+</BES>
