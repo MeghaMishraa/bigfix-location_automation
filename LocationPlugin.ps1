@@ -1,0 +1,1 @@
+Invoke-WebRequest -uri 'http://pepwap07494.corp.pep.pvt/ToolsEngData/Reports/analysis_defined_asset.txt' | Select-Object -Expand Content > C:\megha\megha.txt
